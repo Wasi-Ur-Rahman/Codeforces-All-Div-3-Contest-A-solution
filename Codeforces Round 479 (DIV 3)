@@ -1,0 +1,48 @@
+/*
+    Author: Wasi Ur Rahman
+    From RMSTU
+*/
+#include <bits/stdc++.h>
+using namespace std;
+#define  gcd(a,b) __gcd(a,b)
+#define  lcm(a,b) (a*b)/gcd(a,b)
+#define  PI acos(-1.0)
+#define  sqr(x) ((x)*(x))
+#define  min3(a,b,c) min(a,min(b,c))
+#define  min4(a,b,c,d) min(d,min(a,min(b,c)))
+#define  max4(a,b,c,d) max(d,max(a,max(b,c)))
+typedef   pair<int, int> ii;
+typedef   std::vector<ii> vii;
+#define   vi   std::vector<int>
+#define   vll  std::vector<ll>
+#define   all(n) n.begin(),n.end()
+#define  mpsi std::map<string, int>
+#define  pb             push_back
+#define  ll             long long
+#define  ln             printf("\n");
+#define  fast           ios::sync_with_stdio(false);cin.tie(0)
+#define  max3(a,b,c)    max(a,max(b,c))
+#define setbits(x)      __builtin_popcountll(x)
+#define zerobits(x)     __builtin_ctzll(x)
+#define dec(x,y)        fixed<<setprecision(y)<<x
+#define mk(arr,n,type)  type *arr=new type[n];
+#define w(x)            int x; cin>>x; while(x--)
+mt19937                 rng(chrono::steady_clock::now().time_since_epoch().count());
+int main()
+{
+    fast;
+    ll n,k;
+    cin >> n >> k;
+    ll i,j;
+    ll sum = 0;
+    ll num = n;
+    for(i = 1; i<=k; i++)
+    {
+        sum = n%10;
+        if(sum == 0)
+            n /= 10;
+        else
+            n--;
+    }
+    cout << n << endl;
+}
